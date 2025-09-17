@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Library</title>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+    
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('assets/hero.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px 40px;
+      border-radius: 8px;
+      font-size: 2.5rem;
+      color: black;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+  
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      filter: drop-shadow(2px 2px 5px #888);
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .table-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .table-container div {
+      padding: 15px;
+      border: 1px solid #ddd;
+      font-weight: bold;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      animation: slideUp 1.5s ease;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .contact-form button:hover {
+      transform: translateY(-3px);
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .external-links a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    ::selection {
+      background-color: #ffc107;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+  </section>
+
+  
+
+  <!-- Social Media -->
+  <section>
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <img src="assets/facebook.png" alt="Facebook">
+      <img src="assets/instagram.png" alt="Instagram">
+      <img src="assets/twitter.png" alt="Twitter">
+    </div>
+  </section>
+
+  <!-- Working Hours -->
+  <section>
+    <h2>Working Hours</h2>
+    <div class="table-container">
+      <div>Day</div><div>From</div><div>To</div>
+      <div>Monday</div><div>9:00 AM</div><div>5:00 PM</div>
+      <div>Tuesday</div><div>9:00 AM</div><div>5:00 PM</div>
+      <div>Wednesday</div><div>9:00 AM</div><div>5:00 PM</div>
+      <div>Thursday</div><div>9:00 AM</div><div>5:00 PM</div>
+      <div>Friday</div><div>9:00 AM</div><div>5:00 PM</div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <h2>Send Us a Message</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+
+  <!-- External Links -->
+  <section>
+    <h2>Find Us</h2>
+    <div class="external-links">
+      <a href="https://maps.google.com" target="_blank">📍 Google Maps</a>
+      <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📞 123-456-789 | ✉ info@library.com</p>
+  </footer>
+
+</body>
+</html>
