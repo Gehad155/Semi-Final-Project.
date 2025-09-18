@@ -19,22 +19,14 @@ header{
     width: 100%;
     z-index: 1000;
 }
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
-}
-nav li {
-margin: 25px; ;
+nav{
+   display: flex;
+   gap:15px;
 }
 nav a {
-    color: burlywood;
-    font-weight: bold;
-    transition: color 0.5s ;
-}
-nav a:hover {
-color: cornflowerblue;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 main{
     margin-top: 200px;
@@ -112,3 +104,4 @@ th ,td{
     margin: 3px;
 
 }
+
