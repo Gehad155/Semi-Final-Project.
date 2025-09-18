@@ -1,0 +1,48 @@
+nav{
+   display: flex;
+   gap:15px;
+}
+header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    background:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.library Image{
+    margin-top:100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:20px;
+}
+.books {
+  display: grid;
+  gap: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.books th, .books td {
+  border: 1px solid #0c616e;
+  padding: 10px;
+}
+caption {
+  caption-side: top; 
+  font-size: 23px;  
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  color: rgb(0, 14, 19);  
+  text-align: justify; 
+}
